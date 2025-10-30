@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FIT ZN | Playeras Deportivas y Jerseys Oficiales ⚽</title>
+    <meta name="description" content="FIT ZN: Vistiendo a los Campeones del Mañana. Playeras deportivas, accesorios y más. Descubre jerseys de futbol, basquetbol y tus deportes favoritos.">
+    <meta name="keywords" content="Futbol, playeras, basquetbol, tenis, deportes, nike, adidas, puma, jersey, FIT ZN">
+    <meta name="author" content="Daniel">
+    <meta name="copyright" content="©️ 2025 FIT ZN. Todos los derechos reservados.">
+    <meta name="application-name" content="FIT ZN">
+    <meta name="generator" content="VSCode">
+    
+
+    <link href= "https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet"/>
+
+    <link rel="stylesheet" href ="styles.css">
+
+     
+   <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top" aria-label="Navegación principal">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+          <img src="img/FITZNLOGO.jpeg" alt="FIT ZN STORE Logo" height="28" class="align-text-top me-2"> 
+        <span class="fw-semibold">FIT ZN STORE</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+            aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+
+        <button class="btn btn-outline-dark btn-sm" data-bs-toggle="modal" data-bs-target="#modalAviso">
+          Aviso
+        </button>
+        
+        <button class="btn btn-outline-dark btn-sm ms-2" data-bs-toggle="modal" data-bs-target="#modalAviso">
+          Aviso
+        </button>
+
+        <button class="btn btn-outline-primary ms-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+            <i class="fas fa-shopping-cart me-1"></i>
+            Carrito
+            <span class="badge bg-danger rounded-pill ms-1" id="cart-count">0</span>
+        </button>
+        </div> </div> </nav>
+
+      </div>
+    </div>
+  </nav>
+  <header class="text-center my-5 pt-3">
+    <h1>FIT ZN: Vistiendo a los Campeones del Mañana 🏆</h1>   
+    <p class="lead">Diseñadas para la acción: estilo, identidad y tecnología para mantenerte seco en todo momento.</p>
+  </header>
+
+  <div class="container mt-3">
+    <div class="alert alert-success" role="alert">
+        ¡Nuevos Kits Disponibles! Explora la <strong>colección 25/26</strong>. <a href="#heroCarousel" class="alert-link fw-bold">Ver ahora</a>
+    </div>
+  </div>
+
+  <main class="container my-4">
+
+    <div id="heroCarousel" class="carousel slide mb-4" data-bs-ride="carousel" aria-label="Promociones destacadas">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner rounded-3 shadow-sm">
+        <div class="carousel-item active">
+          <img src="img/BAYERNTSHIRT.jpeg" class="d-block w-100" alt="Playera Inter 25/26"
+               style="height:380px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block text-start">
+            <h5>Inter 25/26</h5>
+            <p>Nueva colección con tecnología Dri-FIT para máximo rendimiento.</p>
+            <a href="#catalogo" class="btn btn-primary btn-sm">Explorar Catálogo</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/LIVERPOOLTSHIRT.jpg" class="d-block w-100" alt="Accesorios deportivos"
+               style="height:380px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Accesorios</h5>
+            <p>Completa tu equipación. Balones, bufandas y más para el verdadero aficionado.</p>
+            <a href="#tablaProductos" class="btn btn-light btn-sm">Ver Inventario</a>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="img/ARSENALTSHIRT.jpeg" class="d-block w-100" alt="Ofertas especiales en jerseys"
+               style="height:380px; object-fit:cover;">
+          <div class="carousel-caption d-none d-md-block text-end">
+            <h5>Ofertas Especiales</h5>
+            <p>Ahorra en tu primer pedido y equípate con lo mejor.</p>
+            <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalCupon">
+              Obtener Cupón
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev" aria-label="Anterior">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next" aria-label="Siguiente">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      </button>
+    </div>
+    <div class="row g-4">
+      <div class="col-12 col-lg-8" id="catalogo">
+
+        <div class="card shadow-sm mb-4">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="img/REALMADRID1RA.webp" class="img-fluid rounded-start" alt="KIT 1RA Y 3RA PLAYERA REAL MADRID"><br>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2 class="card-tittle h4 mb-2">Kit Real Madrid 25/26</h2>
+                        <p class="card-text mb-1">Viste los colores de los campeones con el kit de primera y tercera equipación. <strong>Calidad premium</strong> y diseño oficial.</p>
+                        <p class="card-text fs-5 fw-semibold text-success">$3,000 MXN</p>
+                        <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="https://via.placeholder.com/400x300/6c757d/ffffff?text=Bufanda+Real+Madrid" class="img-fluid rounded-start" alt="REAL MADRID BUFANDA"><br>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2 class="card-tittle h4 mb-2">Bufanda Real Madrid 🧣</h2>
+                        <p class="card-text mb-1">El accesorio perfecto para animar en el estadio o para mostrar tu pasión a diario. <strong>Tejido suave</strong> y resistente.</p>
+                        <p class="card-text fs-5 fw-semibold text-success">$450 MXN</p>
+                        <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card shadow-sm mb-4">
+            <div class="row g-0">
+                <div class="col-md-5">
+                    <img src="https://via.placeholder.com/400x300/ff9800/ffffff?text=Balón+Real+Madrid" class="img-fluid rounded-start" alt="REAL MADRID BALON"><br>
+                </div>
+                <div class="col-md-7">
+                    <div class="card-body">
+                        <h2 class="card-tittle h4 mb-2">Balón Real Madrid ⚽</h2>
+                        <p class="card-text mb-1">Entrena como tus ídolos con este balón oficial. <strong>Diseño duradero</strong> para partidos intensos.</p>
+                        <p class="card-text fs-5 fw-semibold text-success">$500 MXN</p>
+                        <button class="btn btn-dark mt-2" data-bs-toggle="modal" data-bs-target="#modalDetalles">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <aside class="col-12 col-lg-4">
+        <h3 class="visually-hidden">Información Adicional y Promociones</h3>
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-dark text-white fw-bold">Descubre Nuestras Categorías 💎</div>
+            <div class="card-body d-flex flex-wrap gap-2">
+                <button class="btn btn-outline-dark btn-sm" aria-label="Jerseys de Futbol">Fútbol</button>
+                <button class="btn btn-outline-dark btn-sm" aria-label="Jerseys de Basquetbol">Baloncesto</button>
+                <button class="btn btn-outline-dark btn-sm" aria-label="Accesorios Deportivos">Accesorios</button>
+                <button class="btn btn-outline-dark btn-sm" aria-label="Ropa de Entrenamiento">Entrenamiento</button>
+                <button class="btn btn-outline-dark btn-sm" aria-label="Nuevos Lanzamientos">Novedades</button>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-sm">
+            <div class="card-header bg-primary text-white fw-bold">Sobre FIT ZN 🌐</div>
+            <div class="card-body">
+                <h5 class="card-title text-primary">Nuestra Filosofía</h5>
+                <p class="card-text">En FIT ZN, combinamos <strong>pasión por el deporte</strong> con <strong>productos de alta calidad</strong> para vestir a los campeones del mañana, ofreciendo solo artículos 100% originales.</p>
+            </div>
+        </div>
+
+        <div class="card mb-4 shadow-lg border-dark">
+            <img src="img/REALMADRID1RA.webp" class="card-img-top" alt="Prenda Destacada: Kit Real Madrid" style="height: 250px; object-fit: cover;">
+            <div class="card-body">
+                <h5 class="card-title text-dark">Kit Real Madrid 25/26 ✨</h5>
+                <p class="card-text">Nuestro diseño más solicitado: la equipación oficial para los verdaderos aficionados. ¡No te quedes sin el tuyo!</p>
+            </div>
+            <div class="card-footer text-center">
+                <button class="btn btn-dark btn-sm text-white" data-bs-toggle="modal" data-bs-target="#modalDetalles">¡Comprar Ahora!</button>
+            </div>
+        </div>
+      </aside>
+    </div>
+
+    <section class="mt-4" id="tablaProductos">
+        <h3 class="h4 mb-3">Inventario y Precios 📊</h3>
+        <div class="table-responsive shadow-sm">
+            <table class="table table-striped table-hover align-middle caption-top">
+                <caption>*Precios en MXN, incluyen impuestos. Stock limitado.</caption>
+                <thead class="table-dark">
+                    <tr>
+                        <th>Producto</th>
+                        <th>Precio (MXN)</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>KIT 1RA Y 3A Equipación (REAL MADRID)</td><td>$3,000</td><td>10</td></tr>
+                    <tr><td>REAL MADRID BUFANDA</td><td>$450</td><td>5</td></tr>
+                    <tr><td>REAL MADRID BALON</td><td>$500</td><td>12</td></tr>
+                    <tr><td>REAL MADRID TAZA</td><td>$350</td><td>8</td></tr>
+                </tbody>
+                <tfoot class="table-light fw-bold">
+                    <tr>
+                        <td colspan="2">Total de Productos en Stock</td>
+                        <td>35</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <section class="my-5">
+        <h3 class="h5 mb-3">Más Sobre FIT ZN:</h3>
+        <p>
+            <button class="btn btn-outline-info" type="button" data-bs-toggle="collapse" data-bs-target="#infoExtra" aria-expanded="false" aria-controls="infoExtra">
+                Nuestra Misión 💎
+            </button>
+        </p>
+        <div class="collapse" id="infoExtra">
+            <div class="card card-body shadow-sm border-info">
+                FIT ZN es una tienda en línea dedicada a ofrecer ropa deportiva de alta calidad para entusiastas del deporte y atletas de todos los niveles. Nuestra misión es proporcionar a nuestros clientes productos que combinen estilo, comodidad y rendimiento, permitiéndoles alcanzar sus metas deportivas con confianza.
+            </div>
+        </div>
+    </section>
+
+    <section class="my-5">
+      <h3 class="h5 mb-3">Preguntas Frecuentes (FAQ) 💭</h3>
+      <div class="accordion" id="miAcordeon">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="encabezadoUno">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelUno" aria-expanded="true" aria-controls="panelUno">
+              ¿Cuáles son las opciones de envío disponibles? ❓
+            </button>
+          </h2>
+          <div id="panelUno" class="accordion-collapse collapse show" aria-labelledby="encabezadoUno" data-bs-parent="#miAcordeon">
+            <div class="accordion-body">
+                Ofrecemos envío estándar y exprés a nivel nacional. Los tiempos de entrega varían según la ubicación.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="encabezadoDos">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelDos" aria-expanded="false" aria-controls="panelDos">
+                Si no me gusta ¿Puedo devolver el producto?
+            </button>
+          </h2>
+          <div id="panelDos" class="accordion-collapse collapse" aria-labelledby="encabezadoDos" data-bs-parent="#miAcordeon">
+            <div class="accordion-body">
+                Sí, aceptamos devoluciones dentro de los 10 días posteriores a la compra, siempre que el producto esté en su estado original.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="encabezadoTres">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelTres" aria-expanded="false" aria-controls="panelTres">
+                ¿Son originales las playeras? 🔄
+            </button>
+          </h2>
+          <div id="panelTres" class="accordion-collapse collapse" aria-labelledby="encabezadoTres" data-bs-parent="#miAcordeon">
+            <div class="accordion-body">
+                Sí, todas nuestras playeras son 100% originales y cuentan con garantía del fabricante.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <section id="contacto" class="container my-5">
+    <h3 class="h4 mb-3">Conecta con FIT ZN 📧</h3>
+    <form id="formContacto" class="row g-3 p-4 border rounded shadow-sm" aria-label="Formulario de contacto para FIT ZN">
+        <div class="col-md-6">
+            <label for="cNombre" class="form-label">Tu Nombre</label>
+            <input type="text" id="cNombre" name="nombre" class="form-control" placeholder="Nombre completo" required>
+        </div>
+        <div class="col-md-6">
+            <label for="cEmail" class="form-label">Tu Email</label>
+            <input type="email" id="cEmail" name="email" class="form-control" placeholder="correo@dominio.com" required>
+        </div>
+        <div class="col-12">
+            <label for="cMotivo" class="form-label">Motivo de Contacto</label>
+            <select id="cMotivo" name="motivo" class="form-select" required>
+                <option value="" selected disabled>Selecciona una opción...</option>
+                <option value="consultaProducto">Consulta sobre un Producto</option>
+                <option value="pedidoExistente">Pregunta sobre un Pedido Existente</option>
+                <option value="devolucionesCambios">Devoluciones o Cambios</option>
+                <option value="otro">Otro</option>
+            </select>
+        </div>
+        <div class="col-12">
+            <label for="cMsg" class="form-label">Tu Mensaje</label>
+            <textarea id="cMsg" name="mensaje" class="form-control" rows="4" placeholder="Detalla tu consulta aquí..." required></textarea>
+        </div>
+        <div class="col-12 d-flex gap-2">
+            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+            <button type="reset" class="btn btn-outline-secondary">Limpiar Formulario</button>
+        </div>
+    </form>
+   </section>
+
+  <div class="modal fade" id="modalAviso" tabindex="-1" aria-labelledby="modalAvisoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h1 class="modal-title fs-5" id="modalAvisoLabel">Aviso Importante 🎉</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                ¡Envío <strong>gratis</strong> a todo México en compras superiores a <strong>$1,499 MXN</strong>! Aprovecha.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Entendido</button>
+                <a href="#catalogo" class="btn btn-primary btn-sm">Ver Catálogo</a>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalCupon" tabindex="-1" aria-labelledby="modalCuponLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content text-center">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="modalCuponLabel">Tu Cupón de Bienvenida 🎁</h1>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <p class="mb-3">Usa el código <strong>PROFEJOAKO10</strong> para obtener un <strong class="text-primary">10% de descuento</strong> en tu primera compra.</p>
+                <div class="d-flex justify-content-center align-items-center bg-light p-3 rounded border">
+                    <strong class="h3 mb-0 text-dark">PROFEJOAKO10</strong>
+                    <button class="btn btn-outline-secondary ms-3 btn-sm" onclick="navigator.clipboard.writeText('PROFEJOAKO10');">Copiar</button>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-center">
+                <button type="button" class="btn btn-success btn-sm" data-bs-dismiss="modal">¡Aplicar Descuento!</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modalDetalles" tabindex="-1" aria-labelledby="modalDetallesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h1 class="modal-title fs-5" id="modalDetallesLabel">Detalles del Producto ✨</h1> 
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <img src="img/REALMADRID1RA.webp" alt="Kit Real Madrid 25/26" class="img-fluid rounded shadow-sm">
+                        <small class="text-muted d-block mt-2">Colores y diseños oficiales del club.</small>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="lead text-primary fw-bold fs-3">Kit Real Madrid 25/26</h2>
+                        <p class="mb-3">La equipación oficial para los verdaderos aficionados. Fabricada con materiales de alta tecnología para ofrecer comodidad y rendimiento dentro y fuera de la cancha. Demuestra tu lealtad con el escudo del equipo bordado.</p>
+                        
+                        <h3 class="fs-5 mt-4 mb-2">Características Clave:</h3>
+                        <ul class="list-unstyled mb-3 small">
+                            <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Material:</strong> 100% poliéster reciclado.</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Tecnología:</strong> Dri-FIT que absorbe el sudor.</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Corte:</strong> Ajuste estándar para una sensación relajada.</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Costuras:</strong> Reforzadas para mayor durabilidad.</li>
+                            <li><i class="fas fa-check-circle text-success me-2"></i> <strong>Autenticidad:</strong> Producto 100% original.</li>
+                        </ul>
+                        
+                        <div class="d-flex align-items-center gap-3 mt-4 pt-3 border-top">
+                            <span class="fs-4 fw-bold text-dark">$3,000 MXN</span>
+                            <a href="#" target="_blank" class="btn btn-primary btn-lg"><i class="fas fa-shopping-cart me-2"></i> Comprar Ahora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Seguir Viendo</button>
+            </div>
+        </div>
+    </div>
+  </div>
+  <a
+  href="https://api.whatsapp.com/send?phone=5217222250017" 
+  class="whatsapp-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Chatea por WhatsApp">
+  <i class="fab fa-whatsapp" aria-hidden="true"></i>
+</a>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="cartOffcanvasLabel">Tu Carrito de Compras 🛒</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+    <ul id="cart-items-list" class="list-group list-group-flush mb-3">
+        </ul>
+
+    <p id="cart-empty-msg" class="text-center text-muted">Tu carrito está vacío.</p>
+
+    <div id="cart-footer" class="mt-auto pt-3 border-top" style="display: none;">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <span class="fs-5 fw-bold">Total:</span>
+            <span class="fs-5 fw-bold text-success" id="cart-total-price">$0.00 MXN</span>
+        </div>
+        <button class="btn btn-primary w-100">Proceder al Pago</button>
+    </div>
+
+  </div>
+</div>
+<footer class="bg-dark text-center text-white py-3 mt-5">
+
+<footer class="bg-dark text-center text-white py-3 mt-5">
+    <div class="container">
+        <p class="mb-2">©️ 2025 FIT ZN. Todos los derechos reservados.</p>
+        <p class="small mb-2">Email: <a href="mailto:hola@g_hostcity.com" class="text-white">hola@g_hostcity.com</a> | Horarios: L-D, 24hrs</p>
+        <div class="mt-2">
+            <a href="#" target="_blank" rel="noopener" class="text-white me-3" aria-label="Facebook">
+                <i class="fab fa-facebook fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener" class="text-white me-3" aria-label="Instagram">
+                <i class="fab fa-instagram fa-lg" aria-hidden="true"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5217222250017" target="_blank" rel="noopener" class="text-white" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp fa-lg" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+      <script src="app.js"></script>
+ 
+</body>
+</html>
